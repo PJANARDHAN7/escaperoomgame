@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>game</title>
+    
+</head>
+
+
+
+
+<body class="body">
+    
+    <button id="start" onclick="start()" >START</button>
+    <button id="end" onclick="end()">END</button>
+
+    <!-- a text box in the middle with answer field with id question_box -->
+    <div id="question_box">
+        <p id="question">Question</p>
+        <p id="question_text"></p>
+        <input type="text" id="answer">
+        <!-- button to run a function of the user and keep it disabled initally-->
+
+        <button  id="check_answer" onclick="checkAnswer()">Submit</button>
+    </div>
+
+    <div id="score_box">
+        <p id="score">SCORE:<span id="score_text"></span></p>
+        <!-- <p id="score_text" >0</p> -->
+    </div>
+
+    <!-- create a get question button -->
+    <!-- <img id="get_question" class="box"  src="box.png" onclick="solveme()" style="position: absolute; left: 10;" /> -->
+
+    
+
+
+
+
+    <button id="random_number" onclick="randomNumber()" >Generate Random Number</button>
+    <div id="random_number_box">
+        <p id="random_number_text"></p>
+    </div>
+
+    <!-- insert the image in the bottom left corner  -->
+    <img src="running.gif" alt="person"  id="person">
+    <img id="get_question"  src="box.png" />
+    <!-- <script src="confetti.js"></script> -->
+    <script src="run.js"></script>
+        
+    </script>
+</body>
+
+</html>
